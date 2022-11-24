@@ -4,7 +4,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Description of your program')
 parser.add_argument('-i','--input', help='input file', required=True)
 parser.add_argument('-f','--factor', help='size factor, for example, 0.5 means half of the original size', required=True, type=float)
-parser.add_argument('-o','--output', help='size factor, for example, 0.5 means half of the original size', required=True)
+parser.add_argument('-o','--output', help='output file', required=True)
 args = vars(parser.parse_args())
 
 inputFile = args['input']
