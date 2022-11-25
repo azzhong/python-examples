@@ -1,6 +1,6 @@
 # CLI Program That Resizes Images
 
-A demo of using PIL and argparse to build a CLI tool that can be used to resize an image.
+A demo of using PIL and [argparse](https://docs.python.org/3/library/argparse.html) to build a CLI tool that can be used to resize an image.
 
 usage
 
