@@ -15,9 +15,12 @@ print(f'={inputFile}')
 
 foo = Image.open(inputFile)  
 (h, w) = foo.size  
-factor = 0.5
+print(f'before - height:{h}, width:{w}')
+
+print(f'factor: {factor}')
 h = int(h*factor)
 w = int(w*factor)
 
+print(f'after - height:{h}, width:{w}')
 foo = foo.resize((h, w),Image.ANTIALIAS)
 foo.save(outputFile, optimize=True, quality=95)  
